@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Example</title>
     <style>
         body {
             text-align: center; /* Center-align the content in the body */
+            background-color: rgb(252, 224, 228); /* Set the background color to pink */
         }
 
         h1 {
-            color: pink; /* Set the color to pink */
+            color: rgb(63, 3, 37); /* Set the text color to white */
+            font-size: 24px; /* Adjust the font size for smaller screens */
+            font-family: 'Courier New', monospace;
+        }
+
+        img {
+            max-width: 100%; /* Make the image responsive, adjusting to the screen width */
+            height: auto; /* Maintain the image's aspect ratio */
+            display: block; /* Remove any default spacing around the image */
+            margin: 0 auto; /* Center-align the image */
+        }
+
+        @media (max-width: 480px) {
+            /* Apply additional styles for screens with a maximum width of 480px (typical phone screens) */
+            h1 {
+                font-size: 18px; /* Further reduce the font size for smaller screens */
+            }
         }
     </style>
 </head>
